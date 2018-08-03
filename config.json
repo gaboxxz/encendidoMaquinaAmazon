@@ -1,0 +1,35 @@
+{
+  "IamFleetRole": "arn:aws:iam::785352130168:role/aws-ec2-spot-fleet-role",
+  "AllocationStrategy": "lowestPrice",
+  "TargetCapacity": 1,
+  "SpotPrice": "0.246",
+  "ValidFrom": "2016-08-25T19:08:13Z",
+  "ValidUntil": "2017-08-25T19:08:13Z",
+  "TerminateInstancesWithExpiration": true,
+  "LaunchSpecifications": [
+    {
+      "ImageId": "ami-e28a1d8e",
+      "InstanceType": "m1.large",
+      "KeyName": "test_complete",
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/sda1",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 100,
+            "SnapshotId": "snap-f429eec2"
+          }
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+        "NetworkInterfaceId": "eni-593f283b",
+        "DeviceIndex": 0,
+        "DeleteOnTermination": false
+        }
+      ]
+    }
+  ],
+  "Type": "request"
+}

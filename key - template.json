@@ -1,0 +1,10 @@
+De la pagina de amazon generar una nueva acces key y secret key en las opciones de usuario. (cuenta de admin). borrar esta linea y completar entre las comillas
+{
+"Access_Key_ID" : "
+",
+
+"Secret_Access_Key" : "",
+
+"Region_Name" : "sa-east-1"
+
+}
